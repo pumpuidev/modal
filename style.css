@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'roboto' Arial, Helvetica, sans-serif;
+  }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(18, 109, 117);
+    background-color: rgba(66, 10, 10, 0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid rgb(100, 55, 55);
+  width: 50%;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.X {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.X:hover,
+.X:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-modal {
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-modal:hover {
+    scale: 1.05;
+}
+.btn-any {
+    background-color: blueviolet;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-green {
+    background-color: rgb(82, 202, 82);
+    border: 2px solid #328135;
+}
+.btn-green:hover {
+    background-color: rgb(2, 167, 2);
+    border: 2px solid #000000;
+}
+.btn-red {
+    background-color: rgb(245, 110, 32);
+    border: 2px solid #ca1c10;
+}
+.btn-red:hover {
+    background-color: red;
+    border: 2px solid #000000;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 2
+    }
+    to {
+        opacity: 3
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 2
+    }
+    to {
+        opacity: 3
+    }
+}
+
+@media screen and (max-width:560px) {
+    .modal {
+        width: 100%;
+    }
